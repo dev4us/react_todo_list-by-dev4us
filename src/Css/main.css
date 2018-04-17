@@ -1,0 +1,155 @@
+html,
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+
+.template {
+  width: 512px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.105),
+    0 1px 2px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.105), 0 1px 2px rgba(0, 0, 0, 0.18);
+
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.template-header {
+  width: 100%;
+  height: 100px;
+  background: #ff7575;
+
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  line-height: 2;
+}
+
+.template-input-frame {
+  background: white;
+  height: 60px;
+  padding-top: 1rem;
+}
+
+.template-input-box {
+  display: flex;
+  width: 80%;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.template-input {
+  width: 100%;
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #ff7575;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+
+  font-size: 1.2rem;
+  color: #888888;
+}
+
+.template-button-save {
+  width: 5rem;
+  background: #ff7575;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.template-button-save:hover {
+  background: #fb9b9b;
+}
+
+.item-frame {
+  display: flex;
+  height: 50px;
+  background: white;
+  border-bottom: 1px dashed #dcdcdc;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-name {
+  flex: 1;
+  color: #888888;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
+
+.remove-mark {
+  font-size: 2rem;
+  color: red;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-top: -0.4rem;
+  opacity: 0;
+  user-select: none;
+}
+
+.item-frame:hover .remove-mark {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.check-mark {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #dcdcdc;
+  opacity: 1;
+  user-select: none;
+}
+
+.check-mark-none {
+  opacity: 0;
+}
+
+.colorPicker-frame {
+  display: flex;
+  height: 80px;
+  border-bottom: 2px dashed #fb9b9b;
+  background: white;
+  justify-content: center;
+}
+
+.colorBox {
+  width: 65px;
+  height: 60px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+.redBox {
+  background: #ff7575;
+}
+.blueBox {
+  background: #7cb5ec;
+}
+.greenBox {
+  background: #62c144;
+}
+.blackBox {
+  background: #888888;
+}
+
+.colorBox:hover {
+  opacity: 0.5;
+}
+.active {
+  opacity: 1 !important;
+}
