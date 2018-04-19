@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
 class ColorPicker extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.pickColor !== nextProps.pickColor;
+  }
   render() {
     const { onColorChange, pickColor } = this.props;
 

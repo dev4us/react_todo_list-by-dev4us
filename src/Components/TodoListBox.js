@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 
 class TodoListBox extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.todo !== nextProps.todo;
+  }
   render() {
     const { todo, onToggle, onRemove } = this.props;
+    //console.log(todo);
 
     const todoMap = todo.map(({ id, todoName, fontColor, checked }) => (
       <div className="item-frame" key={id} onClick={() => onToggle(id)}>

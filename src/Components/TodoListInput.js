@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "../Css/main.css";
 
 class TodoListInput extends Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props !== nextProps;
+  }
   render() {
     const { pickColor } = this.props;
     return (
